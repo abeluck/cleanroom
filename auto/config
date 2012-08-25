@@ -58,10 +58,10 @@ fi
 install -d config/chroot_local-includes/etc/amnesia/
 
 # environment
-TAILS_WIKI_SUPPORTED_LANGUAGES="$(ikiwiki-supported-languages ikiwiki.setup)"
-[ -n "$TAILS_WIKI_SUPPORTED_LANGUAGES" ] || exit 16
-echo "TAILS_WIKI_SUPPORTED_LANGUAGES='${TAILS_WIKI_SUPPORTED_LANGUAGES}'" \
-   >> config/chroot_local-includes/etc/amnesia/environment
+#TAILS_WIKI_SUPPORTED_LANGUAGES="$(ikiwiki-supported-languages ikiwiki.setup)"
+#[ -n "$TAILS_WIKI_SUPPORTED_LANGUAGES" ] || exit 16
+#echo "TAILS_WIKI_SUPPORTED_LANGUAGES='${TAILS_WIKI_SUPPORTED_LANGUAGES}'" \
+   #>> config/chroot_local-includes/etc/amnesia/environment
 
 # version
 echo "${AMNESIA_FULL_VERSION}" > config/chroot_local-includes/etc/amnesia/version

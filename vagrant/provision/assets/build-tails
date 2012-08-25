@@ -40,7 +40,7 @@ as_root_do git reset --hard "$COMMIT"
 if [ "$TAILS_CLEAN_BUILD" ]; then
 	as_root_do lb clean --all
 fi
-as_root_do ./build-wiki
+#as_root_do ./build-wiki
 
 BUILD_DIR=$(mktemp -d /home/vagrant/tails-build.XXXXXXXX)
 if [ "$TAILS_RAM_BUILD" ]; then
